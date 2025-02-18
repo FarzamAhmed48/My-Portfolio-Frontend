@@ -18,7 +18,7 @@ const ProjectView = () => {
 
   useEffect(()=>{
     const getProject=async()=>{
-      await axios.get(`https://my-portfolio-backend-production-27df.up.railway.app/api/v1/project/get/${id}`,{withCredentials:true})
+      await axios.get(`https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/project/get/${id}`,{withCredentials:true})
       .then((res)=>{
         setTitle(res.data.project.title)
         setDescription(res.data.project.description)

@@ -6,7 +6,7 @@ const Timeline = () => {
   useEffect(() => {
     const getAllTimelines = async () => {
       const res = await axios.get(
-        "https://my-portfolio-backend-production-27df.up.railway.app/api/v1/timeline/getAll",
+        "https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/timeline/getAll",
         { withCredentials: true }
       );
       console.log(res);

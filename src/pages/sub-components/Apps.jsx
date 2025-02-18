@@ -7,7 +7,7 @@ const Apps = () => {
   useEffect(() => {
     const getAllApps = async () => {
       const res = await axios.get(
-        "https://my-portfolio-backend-production-27df.up.railway.app/api/v1/softwareApplication/getAll",
+        "https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/softwareApplication/getAll",
         { withCredentials: true }
       );
       setApps(res.data.softwareApplications);

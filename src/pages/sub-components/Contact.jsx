@@ -16,7 +16,7 @@ const Contact = () => {
     setLoading(true);
     await axios
       .post(
-        "https://my-portfolio-backend-production-27df.up.railway.app/api/v1/message/send",
+        "https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/message/send",
         { senderName, subject, message },
         {
           withCredentials: true,

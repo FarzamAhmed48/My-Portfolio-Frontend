@@ -7,7 +7,7 @@ const Skills = () => {
   useEffect(() => {
     const getAllSkills = async () => {
       const res = await axios.get(
-        "https://my-portfolio-backend-production-27df.up.railway.app/api/v1/skill/getAll",
+        "https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/skill/getAll",
         { withCredentials: true }
       );
       console.log(res);

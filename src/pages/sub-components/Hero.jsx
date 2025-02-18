@@ -11,7 +11,7 @@ const Hero = () => {
   const [user,setUser]=useState({})
   useEffect(()=>{
     const getUserProfile=async()=>{
-        const res=await axios.get("https://my-portfolio-backend-production-27df.up.railway.app/api/v1/user/me/portfolio",{withCredentials:true})
+        const res=await axios.get("https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/user/me/portfolio",{withCredentials:true})
         console.log(res)
         setUser(res.data.user)
     }

@@ -14,8 +14,8 @@ const About = () => {
         getUserProfile()
     },[])
   return (
-    <div className='w-full flex flex-col overflow-x-hidden'>
-      <div className='relative'>
+    <div className='w-full flex flex-col '>
+      <div className='relative flex '>
         <h1 ref={headRef} className='flex gap-4 items-center text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] leading-[56px] md:leading-[67px] lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold ' style={{background:"hsl(222.2 84% 4.9%)"}}>
           ABOUT
           <span className='text-tubeLight-effect '>
@@ -28,17 +28,17 @@ const About = () => {
 
       <div>
         <div className='grid md:grid-cols-2 my-8 sm:py-20 gap-14'>
-          <div className='flex justify-center items-center'>
+          <div className='flex justify-center items-center z-10'>
             <img src={user.avatar && user.avatar.url} alt={user.fullName}  className='bg-white p-2 sm:p-4 rotate-[5deg] h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px] '/>
           </div>
 
           <div className='flex justify-center flex-col tracking-[1px] text-xl gap-5 text-center'>
-            <p>I'm a MERN stack developer with a passion for building fullstack web applications that are both efficient and user-friendly. My journey started with a curiosity about how websites function, and it has evolved into a strong expertise in developing complete solutions, from the frontend interface to the backend infrastructure.</p>
-            <p>I am currently pursuing a degree in Software Engineering from UBIT, where I continuously expand my knowledge of web technologies. Balancing academic learning with practical experience has helped me deepen my understanding of development workflows, databases, and best practices in software development.</p>
+            <p className='lg:text-[1.5rem] xs:text-[1.1rem]'>I'm a MERN stack developer with a passion for building fullstack web applications that are both efficient and user-friendly. My journey started with a curiosity about how websites function, and it has evolved into a strong expertise in developing complete solutions, from the frontend interface to the backend infrastructure.</p>
+            <p className='lg:text-[1.5rem] xs:text-[1.1rem]'>I am currently pursuing a degree in Software Engineering from UBIT, where I continuously expand my knowledge of web technologies. Balancing academic learning with practical experience has helped me deepen my understanding of development workflows, databases, and best practices in software development.</p>
           </div>
         </div>
 
-        <p className='tracking-[1px] text-xl text-center'>
+        <p className='tracking-[1px] text-xl text-center lg:text-[1.5rem] xs:text-[1.1rem]'>
         Committed to staying current with the latest tools and trends, I'm focused on growing my skills and contributing to impactful projects within the tech industry.
         </p>
       </div>

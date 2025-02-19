@@ -25,7 +25,7 @@ const Home = () => {
     })
     
   return (
-    <article className='px-32 mt-2 overflow-x-hidden sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 sm:mx-auto w-full flex justify-center flex-col gap-14'>
+    <article className='px-16 xs:px-6 md:px-16 lg:px-32 mt-2 overflow-x-hidden sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10 sm:mx-auto w-full flex justify-center flex-col gap-14 lg:gap-0 md:gap-0 sm:gap-1'>
         <div className='flex relative'>
             <Hero />
             <img ref={imgRef} src={man1} alt="" className=' absolute right-8 h-64 top-16 hidden lg:block rounded-full'/>

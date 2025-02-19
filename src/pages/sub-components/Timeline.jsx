@@ -9,15 +9,14 @@ const Timeline = () => {
         "https://my-portfolio-backend-gilt-rho.vercel.app/api/v1/timeline/getAll",
         { withCredentials: true }
       );
-      console.log(res);
       setTimeline(res.data.timelines);
     };
     getAllTimelines();
   }, []);
   return (
     <>
-      <div>
-        <h1 className="overflow-x-hidden text-[1.75rem] md:text-[2rem] lg:text-[2.3rem] mb-4 font-extrabold">Timeline</h1>
+      <div className="  ">
+        <h1 className="overflow-x-hidden text-[1.75rem] md:text-[2rem] lg:text-[2.3rem] mb-4 font-extrabold mt-8">Timeline</h1>
 
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {timeline &&
